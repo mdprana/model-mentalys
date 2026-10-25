@@ -1,0 +1,14 @@
+{
+  "conv1_filters": 256,
+  "conv2_filters": 256,
+  "conv3_filters": 128,
+  "kernel_size": 5,
+  "lstm1_units": 256,
+  "lstm2_units": 64,
+  "dense_units": 128,
+  "dropout_cnn": 0.35,
+  "dropout_lstm": 0.4,
+  "dropout_dense": 0.4,
+  "num_heads": 2,
+  "lr": 0.0019205791733062558
+}

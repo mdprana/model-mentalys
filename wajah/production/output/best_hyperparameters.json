@@ -1,0 +1,8 @@
+{
+  "dense_units": 512,
+  "dropout_rate": 0.6000000000000001,
+  "l2_reg": 0.0005,
+  "se_ratio": 16,
+  "num_dense_layers": 1,
+  "learning_rate": 0.002
+}

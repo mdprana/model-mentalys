@@ -1,0 +1,47 @@
+{
+  "model_name": "fer_vgg16_attention",
+  "version": "v2",
+  "framework": "TensorFlow 2.21.0",
+  "dataset": "FER2013 + CK+ Extended",
+  "num_classes": 7,
+  "labels": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "neutral",
+    "sad",
+    "surprise"
+  ],
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "input_dtype": "float32",
+  "preprocessing": "VGG16: RGB->BGR, subtract [103.939, 116.779, 123.68]",
+  "test_accuracy": 0.6833,
+  "tta_accuracy": 0.6925,
+  "macro_auc": 0.9168,
+  "tta_steps": 10,
+  "architecture": "VGG-16 + SE Block (Hu 2018) + Spatial Attention (CBAM Woo 2018)",
+  "training_strategy": "Progressive fine-tuning 4 phases",
+  "hyperparameters": {
+    "dense_units": 512,
+    "dropout_rate": 0.6000000000000001,
+    "l2_reg": 0.0005,
+    "se_ratio": 16,
+    "num_dense_layers": 1,
+    "learning_rate": 0.002
+  },
+  "class_weights": {
+    "0": 1.047029702970297,
+    "1": 8.555056179775281,
+    "2": 1.0261455525606469,
+    "3": 0.5807780320366133,
+    "4": 0.7610955617752899,
+    "5": 0.870768526989936,
+    "6": 1.299761010583817
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "classes": [
+    "angry",
+    "calm",
+    "disgust",
+    "fearful",
+    "happy",
+    "neutral",
+    "sad",
+    "surprised"
+  ],
+  "index_map": {
+    "angry": 0,
+    "calm": 1,
+    "disgust": 2,
+    "fearful": 3,
+    "happy": 4,
+    "neutral": 5,
+    "sad": 6,
+    "surprised": 7
+  },
+  "risk_formula": {
+    "sad_idx": 6,
+    "neutral_idx": 5,
+    "happy_idx": 4,
+    "formula": "P(sad) + 0.5*P(neutral) - P(happy), clip [0,1]",
+    "fusion_weight": 0.35
+  }
+}
